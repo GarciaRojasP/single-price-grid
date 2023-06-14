@@ -76,7 +76,9 @@ body{
 .main{
     align-items: center;
     justify-content: center;
-    padding: 3rem 0 4rem;
+    min-height: 100vh;
+    padding: 2rem 0;
+    gap: 0;
 }
 
 /*==================== CARD ====================*/

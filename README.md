@@ -25,8 +25,8 @@ Esto es una solución de la [Single price grid component challenge on Frontend M
 
 ### Links
 
-- Ver código: [Single price grid]()
-- Ver demo: [Single price grid]()
+- Ver código: [Single price grid](https://github.com/GarciaRojasP/single-price-grid)
+- Ver demo: [Single price grid](https://single-price-grid-khaki.vercel.app/)
 
 ## Mi proceso
 
