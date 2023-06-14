@@ -21,7 +21,7 @@ Esto es una solución de la [Single price grid component challenge on Frontend M
 
 ### Screenshot
 
-![]()
+![](https://github.com/GarciaRojasP/single-price-grid/assets/119550417/806d84c0-f784-4ac0-b929-196b63a792a9)
 
 ### Links
 
