@@ -1,0 +1,204 @@
+:root{
+
+    /*==================== COLOR PRIMARY ====================*/
+    --cyan: hsl(179, 62%, 43%);
+    --cyan--desaturation: hsl(179, 62%, 43%, 0.7);
+    --bright-yellow: hsl(71, 73%, 54%);
+    --bright-yellow-desaturation: hsl(71, 73%, 54%, 0.75);
+
+    /*==================== COLOR NEUTRAL ====================*/
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+    --grayish-blue--desaturation: hsla(210, 25%, 98%, 0.5);
+
+    
+    /*==================== TYPOGRAPHY ====================*/
+    --body: 'Karla', sans-serif;
+
+    /*==================== FONT ====================*/
+    --font-normal: 16px;
+    --font-medium: 1.3rem;
+    --font-big: 1.8rem;
+
+    /*==================== FONT WEIGHT ====================*/
+    --w-regular: 400; 
+    --w-bold: 700; 
+
+    /*==================== PADDING ====================*/
+    --p-container: 2rem 1.5rem;
+
+    /*==================== lINE HEIGHT ====================*/
+    --line-height: 1.5;
+
+}
+
+@media screen and (min-width:768px) {
+    :root{
+        --font-big: 2rem;
+
+        /*==================== PADDING ====================*/
+        --p-container: 2rem 3rem;
+    }
+}
+
+/*==================== STYLE GENERAL ====================*/
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1, h2{
+    margin:0;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+body{
+    font-family: var(--body);
+    font-size: var(--font-normal);
+    line-height: var(--line-height);
+    background-color: var(--light-gray);
+}
+
+.flex{
+    display: flex;
+    gap: 1rem;
+}
+
+.grid{
+    display: grid;
+    gap: 1rem;
+}
+
+.main{
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 0 4rem;
+}
+
+/*==================== CARD ====================*/
+.card{
+    width: 90%;
+    max-width: 370px;
+    background-color: #fff;
+    overflow: hidden;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+
+    gap:0;
+    grid-template-columns: repeat(1, 1fr);
+
+    animation: fade 0.8s 0.6s both ease-in;
+    -webkit-animation: fade 0.8s 0.6s both ease-in;
+}
+
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.card__info{
+    padding: var(--p-container);
+}
+
+.title__principal{
+    font-size: var(--font-big);
+    font-weight: var(--w-bold);
+    color: var(--cyan);
+    margin: 1rem 0;
+}
+
+.subtitle{
+    font-size: 1.4rem;
+    color: var(--bright-yellow);
+    font-weight: var(--w-bold);
+    margin-bottom: 1rem;
+}
+
+.paragraph{
+    color: var(--grayish-blue);
+    line-height: 2;
+}
+
+.card__data{
+    flex-direction: column;
+    gap: 0;
+    color: var(--light-gray);
+}
+
+.card__subscription{
+    padding: var(--p-container);
+    background-color: var(--cyan);
+}
+
+.why__us{
+    padding: var(--p-container);
+    background-color: var(--cyan--desaturation);
+}
+
+.title__secundary{
+    font-size: 1.2rem;
+    margin-bottom: 0.75rem;
+}
+
+.pay__monthly{
+    font-size: 2rem;
+    gap: 1rem;
+    align-items: center;
+}
+
+.money{
+    color: var(--grayish-blue--desaturation);
+    font-size: var(--font-normal);
+    font-weight: var(--w-bold);
+}
+
+.button{
+    width: 100%;
+    margin: 1rem 0 0;
+    background-color: var(--bright-yellow);
+    font-weight: var(--w-bold);
+    padding: 1em 2em;
+    cursor: pointer;
+    color: inherit;
+    border: none;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: 0.3s all ease-in-out;
+    -webkit-transition: 0.3s all ease-in-out;
+    -moz-transition: 0.3s all ease-in-out;
+    -ms-transition: 0.3s all ease-in-out;
+    -o-transition: 0.3s all ease-in-out;
+}
+
+.button:hover{
+    background-color: var(--bright-yellow-desaturation);
+}
+
+@media screen and (min-width:768px) {
+    .card{
+        max-width: 750px;
+    }
+
+    .card__data {
+        flex-direction: row;
+    }
+
+    .card__subscription, .why__us{
+        width: 50%;
+    }
+    
+}
